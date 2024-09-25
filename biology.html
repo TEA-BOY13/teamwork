@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+   
+</head>
+<style>
+     #b1, #b2, #b3, #b4, #b5, #b6{
+        margin-top: 2%;
+        margin-left: 1%;
+        margin-bottom: 2%;
+        box-shadow: 3px 2px 5px;
+    }
+     /* shareble content */
+   #foot{
+        height: auto;
+        width: 100%;
+        margin: 0%;
+        margin-bottom: -1%;
+        margin-top: 4%;
+       background-image: url(pey.png);
+       background-size: cover;
+        box-shadow: 3px 4px 4px;
+    }
+    #loc{
+        height: 180px;
+        width: 200px;
+        border: 3px 2px 4px;
+        background-image: url(location.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #pab{
+        background-image: url(abouts.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 2%;
+        height: 180px;
+        width: 200px;
+    }
+    
+    #chats{
+        background-image: url(coniy.png);
+        font-weight: bolder;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 2%;
+        height: 180px;
+        width: 200px;
+    }
+    #ploc{
+color: red;
+font-weight: bolder;
+    }
+</style>
+<body style="background-color: aliceblue; text-align: center;">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script>
+        function ribbon(){
+            document.getElementById('tab').style.display = "block";
+            document.getElementById('home').style.display = "none";
+        }
+        function soon(){
+          Swal.fire({
+              icon:'warning',
+              title:'NEW FEATURES',
+              text:'are coming soon',
+              footer:'&copy visionary tech. titans 2021'
+          });
+        }
+    </script>
+    <!-- i use inline css -->
+    <input type="button" value="|||" onclick="ribbon()" id="home" style="background-image: url(home.png); background-size: cover; border: none;">
+    <h4 style="font-style: italic; text-shadow: 2px 3px 4px #85899D;">WELCOME TO DEPARTMENT OF BIOLOGICAL SCIENCE</h4>
+    <div id="tab" style="display: block; height: auto; width: auto;">
+        <a href="science.html"><input type="button" value="HOME" id="b1"></a>
+        <a href="faculty.html"><input type="button" value="FACULTIES" id="b2"></a>
+        <a href="contact.html"><input type="button" value="ABOUT US" id="b4"></a>
+        <a href="https://www.google.com/maps/place/Yobe+state+University,+Damaturu/@11.677664,11.947289,14z/data=!4m6!3m5!1s0x110153aea731a8bd:0x778b5d1b3b2ae0a7!8m2!3d11.7398314!4d11.9615367!16s%2Fg%2F11b8t5lvnw?hl=en&entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D"><input type="button" value="LOCATION" id="b5"></a>
+        <input type="button" onclick="soon()" value="CHAT WITH FRIENDS" id="b6">
+        </div><br>
+   <hr>
+    <div id="div1" style="height: auto; width: 350px; text-align: start; box-shadow: 1px 2px 1px 2px  #85899D; margin: auto; ">
+        <h5 style="text-align: center; margin-top: 4%; color: red;">5 THINGS THAT YOU NEED TO KNOW FOR STUDYING BIOLOGY</h5>
+        <ol>
+            <li>
+        <label for="p">AIMS</label>
+    </li>
+        <p>The aim in entering university to study Biology is to gain a deep understanding of the natural world, develop scientific research skills, and prepare for a career in biological sciences.
+         My objectives include excelling in my coursework, gaining hands-on experience through lab work and field studies, and engaging with the latest research in the field.
+        I also plan to participate in relevant extracurricular activities and connect with peers and professionals to broaden my knowledge and opportunities in Biology.</p>
+        <li>
+        <label for="p">GOALS</label>
+        </li>
+        <p>The goals for studying Biology at university are to gain a deep understanding of core topics like genetics, ecology, and cellular biology, while actively engaging in research through laboratory work and field studies.
+         I seek to enhance my analytical skills to effectively analyze data and address complex biological challenges. Additionally, I plan to identify a specific area within Biology that fascinates me, allowing me to develop expertise
+        that will pave the way for further education or a successful career in the biological sciences.
+        </p>
+        <li>
+            <label for="p">REQUIRMENT FOR STUDYING BIOLOGY</label>
+        </li>
+        <P>1. Complete Senior Secondary School: Have a Senior Secondary School Certificate with credit passes in Biology, Chemistry, Mathematics, and sometimes Physics.<br>
+            2. Pass UTME: Sit for and pass the Unified Tertiary Matriculation Examination (UTME) conducted by JAMB, with relevant subjects including Biology.<br>
+            3. Post-UTME Screening: Some universities require a Post-UTME screening or aptitude test.<br>
+            4. Submit Application: Fill out and submit the university’s application form, and provide any additional documents such as a personal statement if required.
+            </P>
+            <li>
+                <label for="P">JAMB COMBINATIONS</label>
+            </li>
+            <p>1. ENGLISH LANGUAGE<br>2. BIOLOGY<br>3. CHEMISTRY<br>4. MATHS OR PHYSICS</p>
+    </ol>
+    <input type="button" value="CHAT_WITH_FRIENDS" style="margin-left: 100px; margin-bottom: 4%; font-size: medium; font-weight: bolder;">
+    </div>
+    <!-- shareble content -->
+    <div id="foot">
+        <p id="ploc">click the map below to open the entire university location</p>
+    
+      <a href="https://www.google.com/maps/place/Yobe+state+University,+Damaturu/@11.677664,11.947289,14z/data=!4m6!3m5!1s0x110153aea731a8bd:0x778b5d1b3b2ae0a7!8m2!3d11.7398314!4d11.9615367!16s%2Fg%2F11b8t5lvnw?hl=en&entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D"><input type="button" value="LOCATIONS" id="loc" ></a> 
+        
+        <a href="contact.html"><input type="button" id="pab" ></a>
+
+        <input type="button" onclick="soon()" value="WITH" id="chats" >
+        <footer>&copy; visionary tech. titans 2021</footer>
+        </div>
+</body>
+</html>

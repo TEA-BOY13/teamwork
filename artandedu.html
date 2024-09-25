@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   
+</head>
+<style>
+ #tab{
+        height: 30px;
+        width: 600px;
+        display: none;
+        margin-top: 1%;
+        background-color: aliceblue;
+        box-shadow: 1px 1px 1px 1px #85899D;
+    }
+    #b1, #b2, #b3, #b4, #b5, #b6{
+        margin-top: 1%;
+        margin-left: 1%;
+    }
+    a{
+        font-weight: bolder;
+        color: black;
+    }
+</style>
+<body style="background-color: #fcfcfd;">
+
+    <script>
+        function tea(){
+            document.getElementById('bio').style.display = "block";
+            document.getElementById('lis').style.display = "none";
+        }
+        function less(){
+            document.getElementById('bio').style.display = "none";
+            document.getElementById('lis').style.display = "block";
+        }
+        function ribbon(){
+            document.getElementById('tab').style.display = "block";
+            document.getElementById('ribb').style.display = "none";
+        }
+      
+    </script>
+
+    <input type="button" onclick="ribbon()" value="|||" id="ribb" style="border: none; background-color: #fcfcfd;">
+    <div id="tab">
+        <a href="index.html"><input type="button" value="HOME" id="b1"></a>
+        <a href="faculty.html"><input type="button" value="FACULTIES" id="b2"></a>
+        <a href="scidep.html"><input type="button" value="DEPARTMENTS" id="b3"></a>
+        <a href="contact.html"><input type="button" value="ABOUT US" id="b4"></a>
+        <a href="#"><input type="button" value="FOLLOW US" id="b5"></a>
+        <a href="#"><input type="button" value="SUGESTIONS" id="b6"></a>
+        </div>
+    <h1 style="font-size: large; text-shadow: 2px 2px 2px aliceblue; font-weight: bolder; margin-left: 2%; margin-top: 1%;">WELCOME TO FACULTY OF ART AND EDUCATIONS</h1>
+   
+        <img src="edu.jpg" alt="image not founds" style="height: 100px; width: 270px; border-radius: 10px; margin-left: 5%;">
+        <p></p>
+        <input type="button" onclick="tea()" value="EDUCATIONS COURSES" id="lis" style="margin-left: 11%;">
+    <div id="bio" style="height: auto; width: 300px; background-color: aliceblue; box-shadow: 1px 1px 1px 1px #85899D; display: none; margin-left: 3%; margin-top: 2%;">
+        <h6>LIST OF COURSES TO STUDY IN FACULTY OF ART AND EDUCATIONS</h6>
+       
+    <ol>
+        <li>
+            <a href="#"><input type="button" value="BIOLOGY EDUCATION" style="background-color: white; border: none; margin-top: 2%;">GO</a>
+        </li>
+        
+        <li>
+            <a href="#"><input type="button" value="CHEMISTRY EDUCATION" style="background-color: white; border: none; margin-top: 8%;">GO</a>
+        </li>
+        <li>
+            <a href="#"><input type="button" value="PHYSICS EDUCATION" style="background-color: white; border: none; margin-top: 8%;">GO</a>
+        </li>
+        <li>
+            <a href="#"><input type="button" value="MATHEMATICS EDUCATION" style="background-color: white; border: none; margin-top: 8%;">GO</a>
+        </li>
+        <li>
+            <a href="#"><input type="button" value="ISLAMICS EDUCATION" style="background-color: white; border: none;margin-top: 8%;">GO</a>
+        </li>
+        <li>
+            <a href="#"><input type="button" value="BUSINESS EDUCATION" style="background-color: white; border: none; margin-top: 8%;">GO</a>
+        </li>
+        <li>
+            <a href="#"><input type="button" value="GEOGRAPHY EDUCATION" style="background-color: white; border: none; margin-top: 8%; ">GO</a>
+        </li>
+    </ol>
+    <input type="button" onclick="less()" value="see less.." id="lee" style="margin-left: 2%; margin-bottom: 2%;">
+    </div>
+</body>
+</html>

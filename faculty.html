@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<style>
+h1{
+    margin-left: 0%;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-style: italic;
+}
+a{
+        font-weight: bolder;
+        color: black;
+        text-decoration: none;
+
+    }
+    #a4, #a5, #a6, #a7{
+        font-weight: bolder;
+        color: black;
+       
+
+    }
+input{
+    font-weight: bolder;
+    color: black;   
+    margin-top: 8%;
+}
+</style>
+
+<body style="background-color: aliceblue; text-align: center;">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script>
+        var imge = [
+              'science.jpg', 'agric.jpg', 'medical.jpg', 'edu.jpg', 'social.jpg', 'law.jpg'
+  
+        ];
+        var tim = setInterval(tea, 2000);
+        var num = 0;
+        function tea(){
+          var slide = document.getElementById('slide');
+          num++;
+          if(num == imge.length){
+              num = 0;
+          }
+          if(num == 1){
+              document.getElementById('d4').style.color = "green";
+          }
+          if(num == 2){
+              document.getElementById('d4').style.color = "red";
+          }
+          if(num == 3){
+              document.getElementById('d4').style.color = "blue";
+          }
+          if(num == 4){
+              document.getElementById('d4').style.color = "gold";
+          }
+          if(num == 5){
+              document.getElementById('d4').style.color = "aqua";
+          }
+          if(num == 6){
+              document.getElementById('d4').style.color = "black";
+          }
+          
+          slide.src = imge[num];
+          
+        }
+        function soon(){
+          Swal.fire({
+              icon:'warning',
+              title:'NEW FEATURES',
+              text:'are coming soon',
+              footer:'&copy visionary tech. titans 2021'
+          });
+        }
+      </script>
+    <h1 id="h1" style="font-size: x-large; margin-left: 5%; text-align: center; font-weight: bolder; font-style: italic; text-shadow: 2px 2px 4px #85899D;">WELCOME TO FACULTIES</h1>
+    <img src="science.jpg" alt="image not founds" id="slide" style="height: 120px; width:350px; margin-left:2%; margin-top: 1%;">
+    <h4 id="d4" style="margin-left: 2%; font-weight: bolder;">you can choose any faculty that you want to study in</h4>
+ 
+ <div id="div1"  style="height: auto; width: 400px; text-align: start; background-color: aliceblue; box-shadow: 1px 1px 1px 1px #85899D; display: block; margin:auto; margin-top: 2%;">
+<ol>
+    <li>
+    <a href="science.html"><input type="button" value="FACULTY OF SCIENCE" style="background-color: aliceblue; border: none; margin-top: 2%;">GO</a>
+    </li>
+    
+    <li>
+        <a href="agric.html"><input type="button" value="FACULTY OF AGRICULTURAL SCIENCE" style="background-color: aliceblue; border: none; margin-top: 2%;">GO</a>
+    </li>
+    <li>
+        <a href="medical.html"><input type="button" value="FACULTY OF MEDICAL SCIENCE" style="background-color: aliceblue; border: none; margin-top: 2%;">GO</a>
+    </li>
+    <li>
+        <input type="button" id="a4" onclick="soon()" value="FACULTY OF ART AND EDUCATION GO" style="background-color: aliceblue; border: none; margin-top: 2%;">
+    </li>
+    <li>
+        <input type="button"  id="a5" onclick="soon()" value="SOCIAL AND MANAGEMENT SCIENCE GO" style="background-color: aliceblue; border: none;margin-top: 2%;">
+    </li>
+    <li>
+        <input type="button"  id="a6" onclick="soon()" value="FACULTY OF ENGINEERING GO" style="background-color: aliceblue; border: none; margin-top: 2%;">
+    </li>
+    <li>
+       <input type="button"  id="a7" onclick="soon()" value="FACULTY OF LOW GO" style="background-color: aliceblue; border: none; margin-top: 2%; margin-bottom: 5%; ">
+    </li>
+</ol>
+</div>
+
+</body>
+</html>

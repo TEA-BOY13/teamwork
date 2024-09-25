@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   
+</head>
+<style>
+ #tab{
+        height: auto;
+        width: auto;
+        display: block;
+        margin: auto;
+        background-color: aquamarine;
+        box-shadow: 3px 2px 2px #85899D;
+    }
+    #b1, #b2, #b3, #b4, #b5, #b6{
+        margin-top: 2%;
+        margin-left: 1%;
+        margin-bottom: 2%;
+    }
+    a{
+        font-weight: bolder;
+        color: black;
+        text-decoration: none;
+    }
+    /* shareble content */
+    #foot{
+        height: auto;
+        width: 100%;
+        margin: 0%;
+        margin-bottom: -1%;
+        margin-top: 4%;
+        background-color: #0c7078;
+        box-shadow: 3px 4px 4px;
+    }
+    #loc{
+        height: 180px;
+        width: 200px;
+        border: 3px 2px 4px;
+        background-image: url(location.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #pab{
+        background-image: url(abouts.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 2%;
+        height: 180px;
+        width: 200px;
+    }
+    
+    #chats{
+        background-image: url(fallo.png);
+        font-weight: bolder;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 2%;
+        height: 180px;
+        width: 200px;
+    }
+    #ploc{
+color: red;
+font-weight: bolder;
+    }
+</style>
+<body style="background-color: aqua; text-align: center;">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <script>
+        function tea(){
+            document.getElementById('bio').style.display = "block";
+            document.getElementById('lis').style.display = "none";
+        }
+        function less(){
+            document.getElementById('bio').style.display = "none";
+            document.getElementById('lis').style.display = "block";
+        }
+        function ribbon(){
+            document.getElementById('tab').style.display = "block";
+            document.getElementById('ribb').style.display = "none";
+        }
+        function soon(){
+          Swal.fire({
+              icon:'warning',
+              title:'NEW FEATURES',
+              text:'are coming soon',
+              footer:'&copy visionary tech. titans 2021'
+          });
+        }
+    </script>
+    <input type="button" onclick="ribbon()" value="|||" id="ribb" style="border: none; background-image: url(home.png); background-size: cover;">
+    <h1 style="font-size: large; text-shadow: 2px 2px 3px #85899D; font-weight: bolder; margin-top: 1%;">WELCOME TO FACULTY OF MEDICAL SCIENCE</h1>
+    <div id="tab">
+        <a href="index.html"><input type="button" value="HOME" id="b1"></a>
+        <a href="faculty.html"><input type="button" value="FACULTIES" id="b2"></a>
+        <a href="contact.html"><input type="button" value="ABOUT US" id="b4"></a>
+        <a href="https://maps.app.goo.gl/GjbRdA66C4b5nwWaA"><input type="button" value="LOCATION" id="b5"></a>
+        <a href="#"><input type="button" onclick="soon()" value="CHAT WITH FRIENDS" id="b6"></a>
+        </div><br>
+        <hr>
+    
+   
+        <img src="medical.jpg" alt="image not founds" style="height: 100px; width: 270px; border-radius: 10px; margin: auto;">
+        <p></p>
+        <input type="button" onclick="tea()" value="MEDICAL COURSES" id="lis" style="margin: auto; display: none;">
+    <div id="bio" style="height: auto; width: 300px; text-align: start; background-color: aquamarine; box-shadow: 2px 2px 4px 1px #85899D; display: block; margin: auto;">
+        <h6 style="text-align: center; margin: auto; color: red;">LIST OF COURSES TO STUDY IN FACULTY OF MEDICAL SCIENCE</h6>
+       
+    <ol>
+        <li>
+            <a href="mbbs.html"><input type="button" value="MEDICINE AND SURGERY MBBS" style="background-color: aquamarine; border: none; margin-top: 2%;">GO</a>
+        </li>
+        
+        <li>
+         <input type="button" onclick="soon()" value="HUMAN PHYSIOLOGY" style="background-color: aquamarine; border: none; margin-top: 8%;">GO
+        </li>
+        <li>
+            <input type="button" onclick="soon()" value="HUMAN ANATOMY" style="background-color: aquamarine; border: none; margin-top: 8%;">GO
+        </li>
+        <li>
+            <input type="button" onclick="soon()" value="MEDICAL LABORATORY" style="background-color: aquamarine; border: none; margin-top: 8%;">GO
+        </li>
+        <li>
+           <input type="button" onclick="soon()" value="PHYSIOTHEROPHY" style="background-color: aquamarine; border: none;margin-top: 8%;">GO
+        </li>
+        <li>
+            <input type="button" onclick="soon()" value="NUTRITION AND DIETETICS" style="background-color: aquamarine; border: none; margin-top: 8%;">GO
+        </li>
+        <li>
+            <input type="button" onclick="soon()" value="NURSING" style="background-color: aquamarine; border: none; margin-top: 8%; ">GO
+        </li>
+    </ol>
+    <input type="button" onclick="less()" value="see less.." id="lee" style="margin-left: 35%; margin-bottom: 2%; background-color: aquamarine;">
+    </div>
+    <!-- shareble content -->
+    <div id="foot">
+        <p id="ploc">click the map below to open the entire university location</p>
+    <a href="https://www.google.com/maps/place/Yobe+state+University,+Damaturu/@11.677664,11.947289,14z/data=!4m6!3m5!1s0x110153aea731a8bd:0x778b5d1b3b2ae0a7!8m2!3d11.7398314!4d11.9615367!16s%2Fg%2F11b8t5lvnw?hl=en&entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D" class="fa fa-map">
+        
+        <input type="button" value="LOCATIONS" id="loc" ></a> 
+        
+        <a href="contact.html"><input type="button" id="pab" ></a>
+
+        <a href="contact1.html"><input type="button" value="" id="chats" ></a>
+        <footer>&copy; visionary tech. titans 2021</footer>
+        </div>
+</body>
+</html>

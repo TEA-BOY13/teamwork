@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script>
+        function ribbon(){
+            document.getElementById('tab').style.display = "block";
+            document.getElementById('home').style.display = "none";
+        }
+    </script>
+</head>
+<style>
+    #b1, #b2, #b3, #b4, #b5, #b6{
+       margin-top: 2%;
+       margin-left: 1%;
+       margin-bottom: 2%;
+       box-shadow: 3px 2px 5px;
+   }
+    /* shareble content */
+    #foot{
+        height: auto;
+        width: 100%;
+        margin: 0%;
+        margin-bottom: -1%;
+        margin-top: 4%;
+       background-image: url(pey.png);
+       background-size: cover;
+        box-shadow: 3px 4px 4px;
+    }
+    #loc{
+        height: 180px;
+        width: 200px;
+        border: 3px 2px 4px;
+        background-image: url(location.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #pab{
+        background-image: url(abouts.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 2%;
+        height: 180px;
+        width: 200px;
+    }
+    
+    #ploc{
+color: red;
+font-weight: bolder;
+    }
+</style>
+<body style="background-color: aliceblue; text-align: center;">
+    <!-- i use inline css -->
+    <input type="button" value="|||" onclick="ribbon()" id="home" style="background-image: url(home.png); background-size: cover; border: none;">
+    <h4 style="font-style: italic; text-shadow: 2px 3px 4px #85899D;">WELCOME TO DEPARTMENT OF COMPUTER SCIENCE</h4>
+    <div id="tab" style="display: block; height: auto; width: auto; margin: auto;">
+        <a href="science.html"><input type="button" value="HOME" id="b1"></a>
+        <a href="faculty.html"><input type="button" value="FACULTIES" id="b2"></a>
+        <a href="scidep.html"><input type="button" value="DEPARTMENTS" id="b3"></a>
+        <a href="contact.html"><input type="button" value="ABOUT US" id="b4"></a>
+        <a href="contact1.html"><input type="button" value="FOLLOW US" id="b5"></a>
+        </div>
+   
+    <div id="div1" style="height: auto; width: 350px; box-shadow: 1px 2px 1px 2px  #85899D; margin: auto; text-align: start;">
+        <h5 style="text-align: center; margin-top: 4%; color: red;">5 THINGS THAT YOU NEED TO KNOW FOR STUDYING COMPUTER SCIENCE</h5>
+        <ol>
+            <li>
+        <label for="p">AIMS</label>
+    </li>
+        <p>The aim in entering university to study Computer Science is to gain a solid foundation in programming, algorithms, and software development, while preparing for a career in the tech industry.
+             My objectives include excelling in my coursework, developing practical skills through coding projects and internships, and staying updated with the latest advancements in technology.
+             I also plan to engage in relevant extracurricular activities, such as coding clubs or hackathons, and build a network with peers and professionals to enhance my knowledge and career opportunities in Computer Science.</p>
+        <li>
+        <label for="p">GOALS</label>
+        </li>
+        <p><span>i. Develop Problem-Solving Skills:</span><br> Students learn to approach complex problems methodically, using computational thinking to design, implement, and evaluate solutions.<br>
+            <span>ii. Understand Core Principles:<br></span> A strong foundation in algorithms, data structures, software engineering, databases, and operating systems is essential. This helps students understand how software and hardware interact to solve computational problems.<br>
+            <span>iii. Master Programming Languages:</span><br> Students gain proficiency in multiple programming languages, allowing them to select the appropriate tools and techniques for various tasks.
+            <span>iv. Foster Analytical Thinking:</span><br> Courses in computer science often involve logical reasoning, mathematical foundations, and the ability to abstract and generalize from specific instances.<br>
+            <span>v. Prepare for Research and Innovation:</span><br> For those interested in advancing the field, studying computer science lays the groundwork for research in topics like quantum computing, human-computer interaction, and software development methodologies.
+        </p>
+        <li>
+        <label for="P">REQUIRMENT FOR STUDYING COMPUTER SCIENCE</label>
+        <p>1. Strong Mathematics Background: Proficiency in mathematics is essential. Most programs require a solid understanding of algebra, geometry, and calculus. Some programs may also require or recommend knowledge of discrete mathematics, statistics, and linear algebra.
+        <br>2. Science Courses: Many programs prefer or require students to have taken science courses, particularly in physics, as the principles of physics are closely related to computer science.</p>
+    </li>
+    <li>
+        <label for="P">JAMB COMBINATIONS</label>
+        <P>1. MATHEMATICS<br>
+            2. ENGLISH LANGUAGE<br>
+            3. PHYSICS<br>
+            4. CHEMISTRY OR BIOLOGY
+        </P>
+    </li>
+    </ol>
+    </div>
+    <!-- shareble content -->
+    <div id="foot">
+        <p id="ploc">click the map below to open the entire university location</p>
+    <a href="https://www.google.com/maps/place/Yobe+state+University,+Damaturu/@11.677664,11.947289,14z/data=!4m6!3m5!1s0x110153aea731a8bd:0x778b5d1b3b2ae0a7!8m2!3d11.7398314!4d11.9615367!16s%2Fg%2F11b8t5lvnw?hl=en&entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D" class="fa fa-map">
+        
+        <input type="button" value="LOCATIONS" id="loc" ></a> 
+        
+        <a href="contact.html"><input type="button" id="pab" ></a>
+
+        <footer>&copy; visionary tech. titans 2021</footer>
+        </div>
+</body>
+</html>
